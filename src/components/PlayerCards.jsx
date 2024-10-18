@@ -139,7 +139,7 @@ function PlayerCards() {
         Player Cards    
       </Text>
       <Text fontSize="xl" fontWeight="medium" color="#ebebeb" fontFamily="'Pacifico', cursive">
-        Click on a card to see player card info
+        Click on a card to see more info
         </Text>
 
       <SimpleGrid
