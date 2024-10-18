@@ -103,7 +103,7 @@ function StatTracker() {
           <Text 
             color="#F8F8F8" 
             fontWeight="bold" 
-            fontFamily="'Pacifico', cursive" 
+            fontFamily="'Roboto+Condensed', system-ui" 
             fontSize="md"
             textAlign="center" 
           >
@@ -128,7 +128,7 @@ function StatTracker() {
           <Text 
             color="#F8F8F8" 
             fontWeight="bold" 
-            fontFamily="'Pacifico', cursive" 
+            fontFamily="'Roboto+Condensed', system-ui"  
             fontSize="md"
             textAlign="center" 
           >
