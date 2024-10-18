@@ -138,7 +138,7 @@ function PlayerCards() {
       <Text fontSize="4xl" fontWeight="medium" color="#B0E0E6" fontFamily="'Pacifico', cursive">
         Player Cards    
       </Text>
-      <Text fontSize="2xl" fontWeight="medium" color="#ebebeb" fontFamily="'Pacifico', cursive">
+      <Text fontSize="xl" fontWeight="medium" color="#ebebeb" fontFamily="'Pacifico', cursive">
         Click on a card to see player card info
         </Text>
 
