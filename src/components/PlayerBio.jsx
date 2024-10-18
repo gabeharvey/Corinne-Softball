@@ -12,7 +12,7 @@ function PlayerProfile() {
     secondImg: "basketball-placeholder.png",
     name: "Player Bio", 
     bioCategories: [
-      { title: "Class", description: "2030" },
+      { title: "Class", description: "2029" },
       { title: "Position", description: "Pitcher/CF" },
       { title: "Height", description: "5'5\"" },
       { title: "Weight", description: "115 lbs" },
