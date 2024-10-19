@@ -84,27 +84,27 @@ function PlayerCards() {
       bio: "Corinne Bouvier is a power hitter, boasting a batting average of .450, making her a formidable presence at the plate."
     },
     {
-      frontImg: "corinne-1.PNG",
+      frontImg: "corinne-4.PNG",
       name: "Corinne Bouvier",
       bio: "Corinne Bouvier is known for her lightning-fast base running, often stealing bases with ease."
     },
     {
-      frontImg: "corinne-1.PNG",
+      frontImg: "corinne-5.PNG",
       name: "Corinne Bouvier",
       bio: "Corinne Bouvier has a remarkable softball IQ, enabling her to read pitchers and make smart decisions on the base paths."
     },
     {
-      frontImg: "corinne-1.PNG",
+      frontImg: "corinne-6.PNG",
       name: "Corinne Bouvier",
       bio: "Corinne Bouvier excels in the outfield, averaging over 2 putouts per game."
     },
     {
-      frontImg: "corinne-1.PNG",
+      frontImg: "corinne-7.PNG",
       name: "Corinne Bouvier",
       bio: "Corinne Bouvier has shown impressive defensive skills, regularly making crucial plays to stop runs."
     },
     {
-      frontImg: "corinne-1.PNG",
+      frontImg: "corinne-8.PNG",
       name: "Corinne Bouvier",
       bio: "Corinne Bouvier possesses exceptional fielding skills, often making accurate throws to prevent runners from advancing."
     },
