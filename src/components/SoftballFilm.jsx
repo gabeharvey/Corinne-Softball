@@ -51,7 +51,7 @@ function SoftballFilm() {
       description: "Corinne Pitching",
     },
     {
-      videoSrc: "corinne-vid-2.mov",
+      videoSrc: "corinne-vid-2.MOV",
       title: "Corinne Training",
       description: "Intense Softball Training",
     },
