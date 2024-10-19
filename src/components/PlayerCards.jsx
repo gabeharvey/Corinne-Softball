@@ -2,7 +2,7 @@
 import { Box, Text, VStack, SimpleGrid, useBreakpointValue } from '@chakra-ui/react';
 import { useState } from 'react';
 
-function Card({ frontImg, bio, flipSound }) {
+function Card({ frontImg, name, bio, flipSound }) {
   const [flipped, setFlipped] = useState(false);
 
   const handleFlip = () => {
@@ -11,7 +11,7 @@ function Card({ frontImg, bio, flipSound }) {
   };
 
   return (
-    <Box w="300px" h="400px" perspective="1000px" mb="10px">
+    <Box w="300px" h="420px" perspective="1000px" mb="10px">
       <Box
         w="100%"
         h="100%"
@@ -21,6 +21,7 @@ function Card({ frontImg, bio, flipSound }) {
         transform={flipped ? 'rotateY(180deg)' : 'rotateY(0deg)'}
         onClick={handleFlip}
       >
+        {/* Front Side */}
         <Box
           position="absolute"
           style={{ backfaceVisibility: 'hidden' }}
@@ -34,15 +35,32 @@ function Card({ frontImg, bio, flipSound }) {
             bgSize="cover"
             bgPosition="center"
             borderRadius="12px"
-          borderColor="#B0E0E6"
-          borderWidth="3px"
+            borderColor="#B0E0E6"
+            borderWidth="3px"
             w="100%"
             h="100%"
             display="flex"
+            flexDirection="column"
             alignItems="center"
-            justifyContent="center"
-          ></Box>
+            justifyContent="flex-end"
+          >
+            {/* Name Text at the bottom of the front side */}
+            <Text
+              bg="rgba(0, 0, 0, 0)"
+              w="100%"
+              color="#B0E0E6"
+              fontSize="2xl"
+              fontFamily="'Pacifico', cursive"
+              textAlign="center"
+              p={2}
+              borderBottomRadius="12px"
+            >
+              {name}
+            </Text>
+          </Box>
         </Box>
+
+        {/* Back Side */}
         <Box
           bgColor="#4B4B4B"
           bgImage="linear-gradient(-45deg, #ebebeb 25%, transparent 25%, transparent 50%, #38393d 50%, #000000 75%, transparent 75%, transparent)"
@@ -62,11 +80,8 @@ function Card({ frontImg, bio, flipSound }) {
           transform="rotateY(180deg)"
           p={5}
         >
-          {/* <Text fontSize="2xl" fontWeight="bold" color="#F28C28" fontFamily="'Pacifico', cursive">
-            {name}
-          </Text> */}
           <Text mt={4} color="#F8F8F8" fontFamily="'Pacifico', cursive" fontSize="xl" fontWeight="medium" textAlign="center">
-          {bio}
+            {bio}
           </Text>
         </Box>
       </Box>
@@ -80,46 +95,46 @@ function PlayerCards() {
   const players = [
     {
       frontImg: "corinne-1.PNG",
-      name: "Corinne Bouvier",
+      name: "Corinne Bouvier #37",
       bio: "Corinne Bouvier is a power hitter, boasting a batting average of .450, making her a formidable presence at the plate."
     },
     {
       frontImg: "corinne-4.PNG",
-      name: "Corinne Bouvier",
+      name: "Corinne Bouvier #37",
       bio: "Corinne Bouvier is known for her lightning-fast base running, often stealing bases with ease."
     },
     {
       frontImg: "corinne-5.PNG",
-      name: "Corinne Bouvier",
+      name: "Corinne Bouvier #37",
       bio: "Corinne Bouvier has a remarkable softball IQ, enabling her to read pitchers and make smart decisions on the base paths."
     },
     {
       frontImg: "corinne-6.PNG",
-      name: "Corinne Bouvier",
+      name: "Corinne Bouvier #37",
       bio: "Corinne Bouvier excels in the outfield, averaging over 2 putouts per game."
     },
     {
       frontImg: "corinne-7.PNG",
-      name: "Corinne Bouvier",
+      name: "Corinne Bouvier #37",
       bio: "Corinne Bouvier has shown impressive defensive skills, regularly making crucial plays to stop runs."
     },
     {
       frontImg: "corinne-8.PNG",
-      name: "Corinne Bouvier",
+      name: "Corinne Bouvier #37",
       bio: "Corinne Bouvier possesses exceptional fielding skills, often making accurate throws to prevent runners from advancing."
     },
     {
       frontImg: "corinne-1.PNG",
-      name: "Corinne Bouvier",
+      name: "Corinne Bouvier #37",
       bio: "Corinne Bouvier is known for her clutch performances, driving in an average of 3 RBIs in crucial games."
     },
     {
       frontImg: "corinne-1.PNG",
-      name: "Corinne Bouvier",
+      name: "Corinne Bouvier #37",
       bio: "Corinne Bouvier has developed a reliable slap hit, adding versatility to her offensive game."
     },
   ];
-  
+
   const columns = useBreakpointValue({ base: 1, sm: 1, md: 2, lg: 3, xl: 4 });
 
   return (
@@ -140,7 +155,7 @@ function PlayerCards() {
       </Text>
       <Text fontSize="xl" fontWeight="medium" color="#ebebeb" fontFamily="'Pacifico', cursive">
         Click on a card to see more info
-        </Text>
+      </Text>
 
       <SimpleGrid
         columns={columns}
