@@ -47,23 +47,23 @@ function SoftballFilm() {
   const videos = [
     {
       videoSrc: "corinne-vid-1.MOV",
-      title: "Corinne Strikeouts",
-      description: "Corinne Pitching",
+      title: "Corinne Doubles",
+      description: "SA Dream 14U vs RIPTIDE",
     },
     {
       videoSrc: "corinne-vid-2.MOV",
-      title: "Corinne Training",
-      description: "Intense Softball Training",
+      title: "Corinne Swipes Second",
+      description: "SA Dream 14U vs RIPTIDE",
     },
     {
       videoSrc: "corinne-vid-3.MOV",
-      title: "Corinne Fielding",
-      description: "Fielding Techniques",
+      title: "Corinne Home Run",
+      description: "SA Dream 14U vs Texas United",
     },
     {
       videoSrc: "corinne-vid-4.MOV",
-      title: "Corinne Baserunning",
-      description: "Speed on the Diamond",
+      title: "Corinne Triples",
+      description: "SA Dream 14U vs Alaquinez Athletics",
     },
     {
       videoSrc: "corinne-vid-5.MOV",
