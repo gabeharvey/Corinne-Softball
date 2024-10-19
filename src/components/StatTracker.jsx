@@ -88,7 +88,7 @@ function StatTracker() {
       mt={16}
     >
       <Heading fontSize="4xl" fontWeight="medium" color="#B0E0E6" fontFamily="'Pacifico', cursive">
-        Pitching Stat Tracker
+        Stat Tracker
       </Heading>
       <Flex gap={4} mb={6} justifyContent="center">
         <MotionBox
