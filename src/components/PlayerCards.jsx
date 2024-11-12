@@ -79,7 +79,7 @@ function Card({ frontImg, name, bio, funFact, cardNumber, flipSound }) {
           >
           {/* Team Logo */}
           <Box mb={2}>
-            <img src="texas-logo.png" alt="Team Logo" style={{ width: '50px', height: 'auto' }} />
+            <img src="texas-logo.png" alt="Team Logo" style={{ width: '100px', height: 'auto' }} />
           </Box>
 
           {/* Player Stats with Shadow */}
