@@ -29,9 +29,8 @@ function Academics() {
         Academics
       </Heading>
 
-      {/* New box for Corinne's photo */}
       <MotionBox
-        w={{ base: '80%', md: '300px' }} // Adjusted the box size
+        w={{ base: '80%', md: '300px' }} 
         h="auto"
         m="5"
         bgColor="#FFFFFF"
@@ -39,7 +38,7 @@ function Academics() {
         borderWidth="4px"
         borderColor="#B0E0E6"
         boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
-        p={0} // Removed padding to ensure the image takes up the full space
+        p={0} 
         display="flex"
         flexDirection="column"
         alignItems="center"
@@ -51,9 +50,9 @@ function Academics() {
           src="/corinne-8.PNG" 
           alt="Corinne's Student Photo"
           borderRadius="12px"
-          w="100%" // Made the image fill the box
-          h="100%" // Made the image fill the box
-          objectFit="cover" // Ensures the image covers the box area
+          w="100%" 
+          h="100%" 
+          objectFit="cover" 
         />
       </MotionBox>
 
@@ -83,11 +82,11 @@ function Academics() {
             fontSize="lg"
             p={3}
             _hover={{ color: '#B0E0E6', textDecoration: 'underline' }}
-            textAlign="center" // Ensures the text is centered
-            width="100%" // Ensures the text spans the width of the box
+            textAlign="center" 
+            width="100%" 
             display="flex"
-            justifyContent="center" // Centers the text horizontally
-            alignItems="center" // Centers the text vertically
+            justifyContent="center" 
+            alignItems="center" 
           >
             View Transcripts
           </Link>

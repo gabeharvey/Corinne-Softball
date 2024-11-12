@@ -53,7 +53,6 @@ function StatTracker() {
     });
   };
 
-  // Function to calculate averages
   const calculateAverages = (statName) => {
     const total = games.reduce((sum, game) => sum + (parseFloat(game[statName]) || 0), 0);
     return games.length ? (total / games.length).toFixed(2) : 0;

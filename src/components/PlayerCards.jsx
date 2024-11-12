@@ -21,7 +21,7 @@ function Card({ frontImg, name, bio, funFact, cardNumber, flipSound }) {
         transform={flipped ? 'rotateY(180deg)' : 'rotateY(0deg)'}
         onClick={handleFlip}
       >
-        {/* Front Side */}
+
         <Box
           position="absolute"
           style={{ backfaceVisibility: 'hidden' }}
@@ -59,7 +59,6 @@ function Card({ frontImg, name, bio, funFact, cardNumber, flipSound }) {
           </Box>
         </Box>
 
-        {/* Back Side with Holographic Gradient Effect */}
           <Box
             bgGradient="radial-gradient(circle, rgba(230, 230, 255, 0.9) 30%, rgba(230, 230, 255, 0.6) 70%, rgba(230, 230, 255, 0.2) 100%)"
             position="absolute"
@@ -77,12 +76,11 @@ function Card({ frontImg, name, bio, funFact, cardNumber, flipSound }) {
             transform="rotateY(180deg)"
             p={5}
           >
-          {/* Team Logo */}
+
           <Box mb={2}>
             <img src="sa-dream-logo.PNG" alt="Team Logo" style={{ width: '100px', height: 'auto' }} />
           </Box>
 
-          {/* Player Stats with Shadow */}
           <Text
             mt={2}
             color="#F8F8F8"
