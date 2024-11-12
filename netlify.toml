@@ -1,8 +1,6 @@
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "16"
 
 [build]
   command = "npm run build"
-  publish = "dist"  # or wherever your build output is stored
-
-# Optional: Redirects or other settings can go here
+  publish = "dist"  # Or your build directory name
