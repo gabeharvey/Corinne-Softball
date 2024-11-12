@@ -48,7 +48,7 @@ function Card({ frontImg, name, bio, flipSound }) {
             <Text
               bg="rgba(0, 0, 0, 0)"
               w="100%"
-              color="#B0E0E6"
+              color="#B22222"
               fontSize="2xl"
               fontFamily="'Pacifico', cursive"
               textAlign="center"
@@ -94,42 +94,42 @@ function PlayerCards() {
 
   const players = [
     {
-      frontImg: "corinne-1.PNG",
+      frontImg: "corinne-10.PNG",
       name: "Corinne Bouvier #37",
       bio: "Corinne Bouvier is a power hitter, boasting a batting average of .450, making her a formidable presence at the plate."
     },
     {
-      frontImg: "corinne-4.PNG",
+      frontImg: "corinne-11.PNG",
       name: "Corinne Bouvier #37",
       bio: "Corinne Bouvier is known for her lightning-fast base running, often stealing bases with ease."
     },
     {
-      frontImg: "corinne-5.PNG",
+      frontImg: "corinne-12.PNG",
       name: "Corinne Bouvier #37",
       bio: "Corinne Bouvier has a remarkable softball IQ, enabling her to read pitchers and make smart decisions on the base paths."
     },
     {
-      frontImg: "corinne-6.PNG",
+      frontImg: "corinne-13.PNG",
       name: "Corinne Bouvier #37",
       bio: "Corinne Bouvier excels in the outfield, averaging over 2 putouts per game."
     },
     {
-      frontImg: "corinne-7.PNG",
+      frontImg: "corinne-14.PNG",
       name: "Corinne Bouvier #37",
       bio: "Corinne Bouvier has shown impressive defensive skills, regularly making crucial plays to stop runs."
     },
     {
-      frontImg: "corinne-8.PNG",
+      frontImg: "corinne-15.PNG",
       name: "Corinne Bouvier #37",
       bio: "Corinne Bouvier possesses exceptional fielding skills, often making accurate throws to prevent runners from advancing."
     },
     {
-      frontImg: "corinne-1.PNG",
+      frontImg: "corinne-16.PNG",
       name: "Corinne Bouvier #37",
       bio: "Corinne Bouvier is known for her clutch performances, driving in an average of 3 RBIs in crucial games."
     },
     {
-      frontImg: "corinne-1.PNG",
+      frontImg: "corinne-19.PNG",
       name: "Corinne Bouvier #37",
       bio: "Corinne Bouvier has developed a reliable slap hit, adding versatility to her offensive game."
     },
