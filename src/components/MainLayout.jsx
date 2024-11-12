@@ -5,6 +5,7 @@ import StatTracker from './StatTracker';
 import SoftballFilm from './SoftballFilm';
 import Offers from './Offers';
 import Media from './Media';
+import Academics from './Academics';
 
 const MainLayout = () => {
   return (
@@ -23,6 +24,9 @@ const MainLayout = () => {
       </div>
       <div id="media">
         <Media />
+      </div>
+      <div id="academics">
+        <Academics />
       </div>
       <div id="offers">
         <Offers />
