@@ -132,7 +132,7 @@ function StatTracker() {
             fontSize="md"
             textAlign="center" 
           >
-            Elite Club Stats
+            SA Dream Stats
           </Text>
           <Text color="#F8F8F8">Innings Pitched: {averagesTexasHardwork.inningsPitched}</Text>
           <Text color="#F8F8F8">Strikeouts: {averagesTexasHardwork.strikeouts}</Text>
@@ -163,7 +163,7 @@ function StatTracker() {
             {games.map((game, index) => (
               <Box key={index} p={3} bgColor="transparent" borderRadius="8px">
                 <Text color="#000000" fontWeight="bold" fontFamily="'Pacifico', cursive">
-                  Game {index + 1} - Ella Ramirez:
+                  Game {index + 1} - Corinne Bouvier:
                 </Text>
                 <Text color="#000000">Team: {game.team}</Text>
                 <Text color="#000000">Opponent: {game.opponent}</Text>
