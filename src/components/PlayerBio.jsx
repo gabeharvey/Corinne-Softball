@@ -1,8 +1,8 @@
-import { Box, Text, VStack, Heading, Grid, Flex, IconButton, Image } from '@chakra-ui/react'; 
+import { Box, Text, VStack, Heading, Grid, Flex, IconButton } from '@chakra-ui/react'; //add "Image" if X Logo added
 import { motion } from 'framer-motion';
 import { FaFacebookF, FaInstagram, FaSnapchatGhost, FaYoutube } from 'react-icons/fa';
 import { Link } from 'react-router-dom'; 
-import XLogo from '/x-logo.png';
+// import XLogo from '/x-logo.png';
 
 const MotionBox = motion.create(Box); 
 
@@ -78,7 +78,7 @@ function PlayerProfile() {
           <Flex justifyContent="center" mt={6}>
             <IconButton
               as={Link}
-              to="https://facebook.com"
+              to="https://www.facebook.com/corinnebouvier37.2029?mibextid=LQQJ4d"
               aria-label="Facebook"
               icon={<FaFacebookF />}
               variant="ghost"
@@ -90,7 +90,7 @@ function PlayerProfile() {
             />
             <IconButton
               as={Link}
-              to="https://www.instagram.com"
+              to="https://www.instagram.com/corinne.bouvier37/profilecard/?igsh=MTQ5a25lZXg3MnVv"
               aria-label="Instagram"
               icon={<FaInstagram />}
               variant="ghost"
@@ -109,17 +109,6 @@ function PlayerProfile() {
               color="#000000" 
               fontSize="24px"
               _hover={{ color: '#fffc00' }} 
-              _active={{ bg: 'transparent' }}
-              m="1"
-            />
-            <IconButton
-              as={Link}
-              to="https://x.com"
-              aria-label="X"
-              icon={<Image src={XLogo} alt="X Logo" boxSize="24px" />}
-              variant="ghost"
-              color="#000000" 
-              _hover={{ color: '#F5F5F5' }} 
               _active={{ bg: 'transparent' }}
               m="1"
             />
