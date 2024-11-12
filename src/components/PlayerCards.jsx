@@ -2,7 +2,7 @@
 import { Box, Text, VStack, SimpleGrid, useBreakpointValue } from '@chakra-ui/react';
 import { useState } from 'react';
 
-function Card({ frontImg, name, bio, flipSound }) {
+function Card({ frontImg, name, bio, funFact, cardNumber, flipSound }) {
   const [flipped, setFlipped] = useState(false);
 
   const handleFlip = () => {
@@ -44,7 +44,6 @@ function Card({ frontImg, name, bio, flipSound }) {
             alignItems="center"
             justifyContent="flex-end"
           >
-            {/* Name Text at the bottom of the front side */}
             <Text
               bg="rgba(0, 0, 0, 0)"
               w="100%"
@@ -60,28 +59,83 @@ function Card({ frontImg, name, bio, flipSound }) {
           </Box>
         </Box>
 
-        {/* Back Side */}
-        <Box
-          bgColor="#4B4B4B"
-          bgImage="linear-gradient(-45deg, #ebebeb 25%, transparent 25%, transparent 50%, #38393d 50%, #000000 75%, transparent 75%, transparent)"
-          bgSize="1px 1px;"
-          position="absolute"
-          style={{ backfaceVisibility: 'hidden' }}
-          w="100%"
-          h="100%"
-          borderRadius="12px"
-          borderColor="#B0E0E6"
-          borderWidth="3px"
-          display="flex"
-          flexDirection="column"
-          alignItems="center"
-          justifyContent="center"
-          boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
-          transform="rotateY(180deg)"
-          p={5}
-        >
-          <Text mt={4} color="#F8F8F8" fontFamily="'Pacifico', cursive" fontSize="xl" fontWeight="medium" textAlign="center">
+        {/* Back Side with Holographic Gradient Effect */}
+          <Box
+            bgGradient="radial-gradient(circle, rgba(230, 230, 255, 0.9) 30%, rgba(230, 230, 255, 0.6) 70%, rgba(230, 230, 255, 0.2) 100%)"
+            position="absolute"
+            style={{ backfaceVisibility: 'hidden' }}
+            w="100%"
+            h="100%"
+            borderRadius="12px"
+            borderColor="#B0E0E6"
+            borderWidth="3px"
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="center"
+            boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
+            transform="rotateY(180deg)"
+            p={5}
+          >
+          {/* Team Logo */}
+          <Box mb={2}>
+            <img src="texas-logo.png" alt="Team Logo" style={{ width: '50px', height: 'auto' }} />
+          </Box>
+
+          {/* Player Stats with Shadow */}
+          <Text
+            mt={2}
+            color="#F8F8F8"
+            fontFamily="'Roboto Condensed', system-ui"
+            fontWeight="bold"
+            fontSize="md"
+            textAlign="center"
+            textShadow="2px 2px 5px rgba(0, 0, 0, 0.7)"
+          >
+            Batting Average: .450
+          </Text>
+          <Text
+            color="#F8F8F8"
+            fontFamily="'Roboto Condensed', system-ui"
+            fontWeight="bold"
+            fontSize="md"
+            textAlign="center"
+            textShadow="2px 2px 5px rgba(0, 0, 0, 0.7)"
+          >
+            Home Runs: 15
+          </Text>
+          <Text
+            mt={4}
+            color="#F8F8F8"
+            fontFamily="'Roboto Condensed', system-ui"
+            fontWeight="bold"
+            fontSize="md"
+            textAlign="center"
+            textShadow="2px 2px 5px rgba(0, 0, 0, 0.7)"
+          >
+            Card #{cardNumber}
+          </Text>
+          <Text
+            mt={4}
+            color="#F8F8F8"
+            fontFamily="'Pacifico', cursive"
+            fontWeight="bold"
+            fontSize="md"
+            textAlign="center"
+            textShadow="2px 2px 5px rgba(0, 0, 0, 0.7)"
+          >
             {bio}
+          </Text>
+          <Text
+            mt={2}
+            color="#F8F8F8"
+            fontFamily="'Roboto Condensed', system-ui"
+            fontWeight="bold"
+            fontSize="md"
+            textAlign="center"
+            textShadow="2px 2px 5px rgba(0, 0, 0, 0.7)"
+          >
+            Fun Fact: {funFact}
           </Text>
         </Box>
       </Box>
@@ -96,42 +150,58 @@ function PlayerCards() {
     {
       frontImg: "corinne-10.PNG",
       name: "Corinne Bouvier #37",
-      bio: "Corinne Bouvier is a power hitter, boasting a batting average of .450, making her a formidable presence at the plate."
+      bio: "Corinne Bouvier is a power hitter, boasting a batting average of .450, making her a formidable presence at the plate.",
+      funFact: "Enjoys hiking in the mountains.",
+      cardNumber: 1,
     },
     {
       frontImg: "corinne-11.PNG",
       name: "Corinne Bouvier #37",
-      bio: "Corinne Bouvier is known for her lightning-fast base running, often stealing bases with ease."
+      bio: "Corinne Bouvier is known for her lightning-fast base running, often stealing bases with ease.",
+      funFact: "Loves photography.",
+      cardNumber: 2,
     },
     {
       frontImg: "corinne-12.PNG",
       name: "Corinne Bouvier #37",
-      bio: "Corinne Bouvier has a remarkable softball IQ, enabling her to read pitchers and make smart decisions on the base paths."
+      bio: "Corinne Bouvier has a remarkable softball IQ, enabling her to read pitchers and make smart decisions on the base paths.",
+      funFact: "Fan of cooking shows.",
+      cardNumber: 3,
     },
     {
       frontImg: "corinne-13.PNG",
       name: "Corinne Bouvier #37",
-      bio: "Corinne Bouvier excels in the outfield, averaging over 2 putouts per game."
+      bio: "Corinne Bouvier excels in the outfield, averaging over 2 putouts per game.",
+      funFact: "Avid reader of mystery novels.",
+      cardNumber: 4,
     },
     {
       frontImg: "corinne-14.PNG",
       name: "Corinne Bouvier #37",
-      bio: "Corinne Bouvier has shown impressive defensive skills, regularly making crucial plays to stop runs."
+      bio: "Corinne Bouvier has shown impressive defensive skills, regularly making crucial plays to stop runs.",
+      funFact: "Volunteers at animal shelters.",
+      cardNumber: 5,
     },
     {
       frontImg: "corinne-15.PNG",
       name: "Corinne Bouvier #37",
-      bio: "Corinne Bouvier possesses exceptional fielding skills, often making accurate throws to prevent runners from advancing."
+      bio: "Corinne Bouvier possesses exceptional fielding skills, often making accurate throws to prevent runners from advancing.",
+      funFact: "Loves to travel and explore new places.",
+      cardNumber: 6,
     },
     {
       frontImg: "corinne-16.PNG",
       name: "Corinne Bouvier #37",
-      bio: "Corinne Bouvier is known for her clutch performances, driving in an average of 3 RBIs in crucial games."
+      bio: "Corinne Bouvier is known for her clutch performances, driving in an average of 3 RBIs in crucial games.",
+      funFact: "Enjoys painting landscapes.",
+      cardNumber: 7,
     },
     {
       frontImg: "corinne-19.PNG",
       name: "Corinne Bouvier #37",
-      bio: "Corinne Bouvier has developed a reliable slap hit, adding versatility to her offensive game."
+      bio: "Corinne Bouvier has developed a reliable slap hit, adding versatility to her offensive game.",
+      funFact: "Passionate about fitness.",
+      cardNumber: 8,
     },
   ];
 
@@ -147,11 +217,11 @@ function PlayerCards() {
       bgSize="contain"
       bgPosition="center"
       bgRepeat="no-repeat"
-      mt={{ base: 12, md: 16 }} 
-      mb={{ base: 12, md: 16 }} 
+      mt={{ base: 12, md: 16 }}
+      mb={{ base: 12, md: 16 }}
     >
       <Text fontSize="4xl" fontWeight="medium" color="#B0E0E6" fontFamily="'Pacifico', cursive">
-        Player Cards    
+        Player Cards
       </Text>
       <Text fontSize="xl" fontWeight="medium" color="#ebebeb" fontFamily="'Pacifico', cursive">
         Click on a card to see more info
@@ -159,16 +229,18 @@ function PlayerCards() {
 
       <SimpleGrid
         columns={columns}
-        spacing={{ base: 3, sm: 5 }} 
+        spacing={{ base: 3, sm: 5 }}
         justifyItems="center"
       >
         {players.map((player, index) => (
-          <Card 
-            key={index} 
-            frontImg={player.frontImg} 
-            name={player.name} 
+          <Card
+            key={index}
+            frontImg={player.frontImg}
+            name={player.name}
             bio={player.bio}
-            flipSound={flipSound} 
+            funFact={player.funFact}
+            cardNumber={player.cardNumber}
+            flipSound={flipSound}
           />
         ))}
       </SimpleGrid>
